@@ -50,6 +50,10 @@ html {
 }
 
 /* Toggle Button */
+.menu-checkbox {
+  display: none;
+}
+
 .menu-toggle {
   display: none;
   background: none;
@@ -79,7 +83,8 @@ html {
     border-radius: 5px;
   }
 
-  .menu.active {
+  /* Show menu when checkbox is checked */
+  .menu-checkbox:checked ~ .menu {
     display: flex;
   }
 }

@@ -18,6 +18,8 @@
         <img src="icons/logo2.svg" alt="Logo" class="logo-img" />
         <span class="site-name">Surafel</span>
       </div>
+      <input type="checkbox" id="menu-checkbox" class="menu-checkbox" />
+      <label for="menu-checkbox" class="menu-toggle">☰</label>
       <ul class="menu">
         <li><a href="#home">Home</a></li>
         <li><a href="#projects">Projects</a></li>
@@ -25,7 +27,6 @@
         <li><a href="#skills">Skills</a></li>
         <li><a href="#contact">Contact</a></li>
       </ul>
-      <button class="menu-toggle">☰</button>
     </nav>
 
     <!-- Hero -->
@@ -311,14 +312,5 @@
         </p>
       </div>
     </footer>
-
-    <script>
-      const menuToggle = document.querySelector(".menu-toggle");
-      const menu = document.querySelector(".menu");
-
-      menuToggle.addEventListener("click", () => {
-        menu.classList.toggle("active");
-      });
-    </script>
   </body>
 </html>
